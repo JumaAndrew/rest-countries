@@ -1,0 +1,23 @@
+.main {
+  height: 100vh;
+  background-color: var(--color-light-gray);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 4rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+}
