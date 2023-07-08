@@ -13,4 +13,10 @@
 .header__dark_mode {
   font-size: 1.4rem;
   font-weight: 600;
+  display: flex;
+  gap: 1rem;
+}
+
+.header__dark_mode > * {
+  align-self: center;
 }
