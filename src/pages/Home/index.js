@@ -51,13 +51,12 @@ const Home = () => {
           />
         </form>
         <select onChange={filterHandler} className={classes.select}>
-          <option value="">Filter by Region</option>
+          <option value="All">Filter by Region</option>
           <option value="Africa">Africa</option>
           <option value="Americas">Americas</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
           <option value="Oceania">Oceania</option>
-          <option value="All">All</option>
         </select>
       </div>
       <div className={classes.content}>{countryList}</div>

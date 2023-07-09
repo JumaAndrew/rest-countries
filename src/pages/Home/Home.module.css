@@ -6,24 +6,23 @@
 }
 
 .content {
+  color: inherit;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 6rem;
 }
 
-.header > * {
-  background-color: var(--color-white);
-}
-
 input,
 .select {
+  color: inherit;
+  background-color: inherit;
   padding: 1.2rem 1rem;
-  border-radius: 2px;
-  box-shadow: 1px 2px 4px var(--color-dark-gray);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px var(--color-box-shadow);
 }
 
 input {
-  padding-right: 10rem;
+  padding-right: 20rem;
   border: none;
   outline: none;
 }
@@ -33,4 +32,40 @@ input {
   letter-spacing: 0.2px;
   padding-right: 3rem;
   border: none;
+}
+
+@media (max-width: 1050px) {
+  .content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .header > * {
+    align-self: flex-start;
+  }
+
+  input {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }

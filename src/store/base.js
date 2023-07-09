@@ -3,6 +3,7 @@ import countries from '../assets/data.json';
 
 const initialState = {
   countries,
+  neighbours: [],
 };
 
 const countrySlice = createSlice({
